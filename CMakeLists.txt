@@ -4,8 +4,10 @@ set(PROJECT_NAME Game)
 project(${PROJECT_NAME})
 
 add_executable(${PROJECT_NAME}
-	src/main.cpp
-	)
+		src/main.cpp
+		src/Renderer/ShaderProgram.cpp
+		src/Renderer/ShaderProgram.h
+)
 
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
